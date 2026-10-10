@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fernery"
+version = "1.0.0"
+description = "Offline frond unfurling tracker, spore print index and rhizome division log in one JSON file."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["ferns", "gardening", "journal", "cli", "offline"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Home Automation",
+]
+
+[project.scripts]
+fernery = "fernery:main"
+
+[tool.setuptools]
+py-modules = ["fernery"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
